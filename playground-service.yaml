@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: playground-service
+  name: playground-github-service
   namespace: dev
 spec:
   type: LoadBalancer
   selector:
-    app: playground
+    app: playground-github
   ports:
   - protocol: TCP
     port: 8888

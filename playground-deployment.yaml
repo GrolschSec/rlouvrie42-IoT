@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: playground
+  name: playground-github
   namespace: dev
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: playground
+      app: playground-github
   template:
     metadata:
       labels:
-        app: playground
+        app: playground-github
     spec:
       containers:
       - name: playground
